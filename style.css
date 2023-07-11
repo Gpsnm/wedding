@@ -7,7 +7,6 @@
 --sage:#b6c4a2;
 --white:#f1faee;
 }
-
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
@@ -15,10 +14,12 @@
     position: relative;
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+.myLinks {
     display: none;
 }
-
+.addClass{
+    display: block;
+}
 /* Style navigation menu links */
 .topnav a {
     color: #fff;
@@ -45,27 +46,21 @@
     background-color:var(--sage);
     color: white;
 }
-/* desktop view */
+
 @media only screen and (min-width: 600px) {
-    .topnav a.icon{
-        display: none;
-    }
     .topnav{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    #myLinks a {
-        display: inline;
-    }
-    #myLinks a:hover{
-    color:var(--white);
-    }
-    .topnav #myLinks{
-        display:inline;
-
-    }
-    .mobile_hidden{
+    .topnav a.icon {
         display: none;
     }
+    .myLinks{
+        display: flex;
+    }
+    .topnav a {
+        font-size: 24px;
+    }
+
 }
