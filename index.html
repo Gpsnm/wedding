@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAYLEIGH && ADAM</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active">KAYLEIGH & ADAM</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#venue">VENUE</a>
+            <a href="#accomodation">ACCOMMODATION</a>
+            <a href="#schedule">SCHEDULE</a>
+            <a href="#rsvp">RSVP</a>
+
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script src="./script.js"></script>
 <body>
-    <nav>
-        <div class="logo"><a href="#">Kayleigh & Adam</a></div>
-        <div class="navlink"><a href="#"> Where and When</a>
-        <a href="#">Places to stay</a>
-        <a href="#">FAQS</a></div>
-        <div class="rsvp"><a href="#">RSVP</a></div>
-    </nav>
 </body>
 </html>

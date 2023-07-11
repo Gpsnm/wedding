@@ -1,41 +1,71 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    height: 100%;
+}
+:root{
+--sage:#b6c4a2;
+--white:#f1faee;
 }
 
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: var(--sage);
+    position: relative;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
 
-/* navbar */
-a{
+/* Style navigation menu links */
+.topnav a {
+    color: #fff;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+    display: block;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 5%;
-    background-color: aqua;
-    font-size: medium;
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: var(--sage);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+/* Style the active link (or home/logo) */
+.active {
+    background-color:var(--sage);
+    color: white;
+}
+/* desktop view */
+@media only screen and (min-width: 600px) {
+    .topnav a.icon{
+        display: none;
+    }
+    .topnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #myLinks a {
+        display: inline;
+    }
+    #myLinks a:hover{
+    color:var(--white);
+    }
+    .topnav #myLinks{
+        display:inline;
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-decoration: none;
-}
-
-.rsvp{
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    
-}
-
-.navlink{
-    display: flex;
-    justify-content: center;
-    width: 50%;
+    }
+    .mobile_hidden{
+        display: none;
+    }
 }
