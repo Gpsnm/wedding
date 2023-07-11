@@ -6,6 +6,7 @@
 :root{
 --sage:#b6c4a2;
 --white:#f1faee;
+--font:'pinyon Script', cursive;
 }
 /* Style the navigation menu */
 .topnav {
@@ -22,7 +23,7 @@
 }
 /* Style navigation menu links */
 .topnav a {
-    color: #fff;
+    color: #000;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -45,7 +46,34 @@
 .active {
     background-color:var(--sage);
     color: white;
+    font-family: var(--font);
 }
+
+/* hero */
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    height: 600px;
+    width: 100%;
+}
+
+.heroSection h1 {
+    font-size: 65px;
+    font-family: var(--font);
+}
+
+.heroSection h2 {
+    font-family: var(--font);
+    font-size: 32px;
+}
+
+
+
+
 
 @media only screen and (min-width: 600px) {
     .topnav{
@@ -60,7 +88,17 @@
         display: flex;
     }
     .topnav a {
-        font-size: 24px;
+        font-size: 36px;
+        font-family: var(--font);
     }
+/* hero */
 
+.heroSection h1{
+    font-size: 100px;
 }
+
+.heroSection h2 {
+    font-size: 52px;
+}
+}
+
