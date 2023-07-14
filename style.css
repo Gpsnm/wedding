@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
+    scroll-behavior: smooth;
 }
 :root{
 --sage:#b6c4a2;
@@ -57,7 +58,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--white);
-    height: 600px;
+    height: 620px;
     width: 100%;
 }
 
@@ -85,7 +86,18 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.venue h3 {
+    font-size: 26px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
 
+.venue a:hover{
+    text-decoration: underline;
+}
 .venueImg{
     max-width: 300px;
     margin-bottom: 20px;
@@ -97,6 +109,7 @@ h2 {
     max-width: 200px;
     max-height: 200px;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 span{
@@ -106,8 +119,35 @@ span{
 /* accommodation */
 .accommodation{
     background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
+
+.accommodation h3{
+    margin-top: 20px;
+}
+
+.accommodation h2 {
+    margin-top: 20px;
+}
+
+.farmBnb p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rowtonBarns img,
+.farmBnb img {
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
 @media only screen and (min-width: 600px) {
     .topnav{
         display: flex;
