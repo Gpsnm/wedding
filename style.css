@@ -103,6 +103,11 @@ span{
     display: block;
 }
 
+/* accommodation */
+.accommodation{
+    background-color: var(--white);
+}
+
 @media only screen and (min-width: 600px) {
     .topnav{
         display: flex;
