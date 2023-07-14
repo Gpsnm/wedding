@@ -80,12 +80,28 @@ h2 {
     align-items: center;
     text-align: center;
 }
+.venue h2{
+    font-size:38px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .venueImg{
     max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
-
+.rowtonMap{
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+span{
+    display: block;
+}
 
 @media only screen and (min-width: 600px) {
     .topnav{
@@ -111,6 +127,28 @@ h2 {
 
 .heroSection h2 {
     font-size: 52px;
+}
+
+/* venue */
+.venueImg{
+    min-width: 800px;
+    max-height: 600px;
+    min-height: 500px;
+}
+
+.venue h2 {
+    font-size: 52px;
+}
+.rowtonMap {
+    min-width: 500px;
+    max-height: 500px;
+    min-height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.venue h3{
+    font-size: 32px;
 }
 }
 
